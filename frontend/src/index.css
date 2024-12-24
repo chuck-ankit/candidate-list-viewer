@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-woodsmoke-50 text-woodsmoke-900;
+  font-family: 'Inter', sans-serif;
+}
+
+.spinner {
+  border: 4px solid transparent;
+  border-top-color: #6a6b70; /* Woodsmoke 500 */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
